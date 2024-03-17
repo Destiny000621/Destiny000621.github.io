@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Msc student
+role: MSc student
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -53,7 +53,7 @@ social:
     link: '/#contact'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://docs.google.com/presentation/d/1HeuEBsPeFBzuIbrR71lS_SH3uAaKbhgk7TFRW-8x81s/edit#slide=id.g2adad9c7938_1_3
+    link: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=fDpyU1AAAAAJ&gmla=AH70aAWILcu2ikCfLwel5mtBYJ4nKzEza0zUYWITLVViEnE-jBoC3wNc_jdWW63BYhDnyOHfFbRWphz4vg0O9OI-XtJebiZUrLiP8ZjiX-119-Q
   - icon: github
     icon_pack: fab
     link: https://github.com/Destiny000621
@@ -65,7 +65,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: https://drive.google.com/drive/folders/1w0Rp-zgmTPNibO9Q_jTsfFppkcf41lN4
+    link: https://drive.google.com/file/d/1B8Mf2RhAG9iH9UbOnndt_-eYODikziZt/view?usp=sharing
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
