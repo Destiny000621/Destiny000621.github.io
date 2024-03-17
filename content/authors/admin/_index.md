@@ -51,31 +51,25 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://docs.google.com/presentation/d/1HeuEBsPeFBzuIbrR71lS_SH3uAaKbhgk7TFRW-8x81s/edit#slide=id.g2adad9c7938_1_3
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/Destiny000621
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/sichang-su-b1a2962bb/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: https://drive.google.com/drive/folders/1w0Rp-zgmTPNibO9Q_jTsfFppkcf41lN4
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a master student at [MARMot Lab](https://marmotlab.org) in NUS. My research interests include Reinforcement Learning and Robotics, especially Transfer Learning in Reinforcement Learning and Multi-Agent Reinforcement Learning.
 {style="text-align: justify;"}
