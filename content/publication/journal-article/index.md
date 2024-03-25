@@ -2,7 +2,7 @@
 title: "Sentimental Analysis Applied on Movie Reviews"
 authors:
 - admin
-date: "2015-09-22T00:00:00Z"
+date: "2022-09-22T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -54,7 +54,6 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
 ---
 
 {{% callout note %}}
