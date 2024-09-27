@@ -71,5 +71,6 @@ social:
 highlight_name: true
 ---
 
-I am a master student at [MARMot Lab](https://marmotlab.org) in NUS. My research interests include Reinforcement Learning and Robotics, especially Transfer Learning in Reinforcement Learning and Multi-Agent Reinforcement Learning.
+I am a master's student at [MARMot Lab](https://marmotlab.org) at the [National University of Singapore](https://www.nus.edu.sg) under the supervision of Professor [Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
+My research interests include Reinforcement Learning and Robotics, especially Data-driven Reinforcement Learning to achieve generalization. My research goal is to enable agents/robots to solve complex and diverse tasks in real-world applications. Please feel free to reach out if you are interested in discussing relevant research topics or exploring potential collaborations.
 {style="text-align: justify;"}
