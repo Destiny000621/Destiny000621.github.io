@@ -1,9 +1,9 @@
 ---
-title: Explicit Coordination with Multi-Agent Reinforcement Learning Skills in Multi-Agent Systems
-summary: Multi-Agent Reinforcement Learning (MARL) presents unique challenges, notably credit assignment and non-stationarity, complicating the learning process in comparison to Single-Agent Reinforcement Learning. Directly developing an effective cooperative policy through decentralized learning, which depends exclusively on the knowledge and memory of individual agents, poses significant difficulties, and in some cases, may be unfeasible. Skill discovery may be a possible solution. Besides, incorporating global/local communication among agents or agent teams offers a potential resolution to these challenges. This approach enables agents to exchange information and intentions while preserving scalability. Consequently, it mitigates issues related to partial observability and non-stationarity, and enhances joint collaboration at the team level. In essence, communication empowers dispersed agents to operate cohesively as a unified group, rather than merely as an assembly of independent entities.
+title: Efficient Reinforcement Learning for Solving Multiple Tasks
+summary: Reinforcement Learning (RL) has gained significant attention for its potential to solve complex problems in areas such as robotics, sensor networks, and gaming. However, most recent RL approaches focus primarily on learning policies for a single task in simulated environments. This focus can create substantial challenges when transitioning to real-world applications, as the high costs and risks associated with interactions under partially learned policies can be prohibitive. Consequently, enabling agents to solve multiple tasks within a single training process is crucial for the practical deployment of RL in real-world scenarios.
 tags:
   - Reinforcement Learning
-date: "2023-08-27T00:00:00Z"
+date: "2024-05-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 #external_link: https://example.org
