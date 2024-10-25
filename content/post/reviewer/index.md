@@ -1,5 +1,5 @@
 ---
-title: (Oct 2024) I am invited to be a reviewer for NeurIPS 2024 Workshop SafeGenAi.
+title: (Oct 2024) I was invited to be a reviewer for ICLR 2025 and NeurIPS 2024 Workshop SafeGenAi.
 date: '2024-10-05'
 
 ---
