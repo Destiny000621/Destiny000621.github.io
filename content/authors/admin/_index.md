@@ -17,12 +17,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: MSc student
+role: PhD student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: National University of Singapore
-    url: https://nus.edu.sg
+  - name: The University of Texas at Austin
+    url: https://www.utexas.edu
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include reinforcement learning and robotics.
@@ -31,14 +31,17 @@ bio: My research interests include reinforcement learning and robotics.
 interests:
   - Reinforcement Learning
   - Robotics
-  - Machine Learning
+  - Imitation Learning
 
 # Education to show in About widget
 education:
   courses:
+    - course: PhD in Aerospace Engineering
+      institution: The University of Texas at Austin
+      year: 2025-present
     - course: MSc in Mechanical Engineering
       institution: National University of Singapore
-      year: 2023-present
+      year: 2023-2025
     - course: BEng in Engineering Mechanics
       institution: Zhejiang University
       year: 2019-2023
@@ -71,9 +74,9 @@ social:
 highlight_name: true
 ---
 
-I am a master's student at [MARMot Lab](https://marmotlab.org) at the [National University of Singapore](https://www.nus.edu.sg) under the supervision of Professor [Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
+I am a first-year Ph.D. student in Aerospace Engineering at The University of Texas at Austin, co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu). I obtained my Master of Science degree in Mechanical Engineering from the National University of Singapore, under the supervision of [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
 
-My research interests include Reinforcement Learning and Robotics, especially Data-driven Reinforcement Learning to achieve generalization. My research goal is to enable agents/robots to solve complex and diverse tasks in real-world applications. 
+My research interests lie in Reinforcement Learning and Robotics, with a recent focus on developing robotic generalist policies. My long-term goal is to enable agents and robots to efficiently solve complex, diverse tasks in real-world applications.
 
 Please feel free to reach out if you are interested in discussing relevant research topics or exploring potential collaborations.
 {style="text-align: justify;"}
