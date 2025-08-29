@@ -78,5 +78,5 @@ I am a first-year Ph.D. student in Aerospace Engineering at [The University of T
 
 My research interests lie in Reinforcement Learning and Robotics, with a recent focus on developing robotic generalist policies. My long-term goal is to enable agents and robots to efficiently solve complex, diverse tasks in real-world applications.
 
-Please feel free to reach out if you are interested in discussing relevant research topics or exploring potential collaborations.
+Please contact me at sichang_su@utexas.edu if you are interested in discussing relevant research topics or potential collaborations.
 {style="text-align: justify;"}

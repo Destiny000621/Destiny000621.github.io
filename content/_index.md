@@ -115,8 +115,8 @@ sections:
       title: Contact
       subtitle:
       # Contact (add or remove contact options as necessary)
-      email: sichang_su@u.nus.edu
-      phone: (+86)18458123361
+      email: sichang_su@utexas.edu
+      phone: (+1)319-499-2490
     design:
       columns: '2'
 ---
