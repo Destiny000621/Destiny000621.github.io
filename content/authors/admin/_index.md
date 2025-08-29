@@ -10,8 +10,8 @@ first_name: Sichang
 last_name: Su
 
 # Status emoji
-status:
-  icon: 
+#status:
+  #icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -74,7 +74,7 @@ social:
 highlight_name: true
 ---
 
-I am a first-year Ph.D. student in Aerospace Engineering at The University of Texas at Austin, co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu). I obtained my Master of Science degree in Mechanical Engineering from the National University of Singapore, under the supervision of [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
+I am a first-year Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu). I obtained my Master of Science degree in Mechanical Engineering from the National University of Singapore, under the supervision of [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
 
 My research interests lie in Reinforcement Learning and Robotics, with a recent focus on developing robotic generalist policies. My long-term goal is to enable agents and robots to efficiently solve complex, diverse tasks in real-world applications.
 
