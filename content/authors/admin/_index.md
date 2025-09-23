@@ -31,7 +31,7 @@ bio: My research interests include reinforcement learning and robotics.
 interests:
   - Reinforcement Learning
   - Robotics
-  - Imitation Learning
+  - VLA/VLM
 
 # Education to show in About widget
 education:
