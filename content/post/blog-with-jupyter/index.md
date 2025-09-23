@@ -1,5 +1,5 @@
 ---
-title: (Aug 2024) I attended RLC 2024 at UMass Amherst. I learned a lot from the keynote speakers and was happy to talk with other RL researchers. It was a great experience!
-date: '2024-08-09'
+title: (Sept 2025) One co-authored paper, Reinflow (https://reinflow.github.io), has been accepted to NeurIPS, and one co-first-authored paper, HyGen (https://arxiv.org/abs/2408.13567), has been accepted to the NeurIPS 2025 Workshop@ARLET.
+date: '2025-09-23'
 
 ---
