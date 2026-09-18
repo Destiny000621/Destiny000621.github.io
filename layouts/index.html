@@ -112,7 +112,18 @@
         {{ range site.Data.industry }}
         <article class="experience-entry">
           <div class="experience-meta"><p>{{ .date_label }}</p><span>{{ .location }}</span></div>
-          <div class="experience-body"><div class="experience-heading"><h3>{{ .company }}</h3><span class="role-badge">{{ .role }}</span></div>{{ with .mentor }}<p class="experience-mentor"><span>Mentor:</span> {{ . }}</p>{{ end }}<p>{{ .description }}</p><ul>{{ range .bullets }}<li>{{ . }}</li>{{ end }}</ul></div>
+          <div class="experience-body">
+            <div class="experience-heading"><h3>{{ .company }}</h3><span class="role-badge">{{ .role }}</span></div>
+            {{ with .mentor }}<p class="experience-mentor"><span>Mentor:</span> {{ . }}</p>{{ end }}
+            <ul>
+              {{ range .bullets }}
+              <li{{ if .highlight }} class="experience-highlight"{{ end }}>
+                {{ if .highlight }}<strong>{{ .text | markdownify }}</strong>{{ else }}{{ .text | markdownify }}{{ end }}
+                {{ if .code_url }}<a class="experience-code" href="{{ .code_url }}" target="_blank" rel="noopener" aria-label="{{ .code_label }}">GitHub <span aria-hidden="true">↗</span></a>{{ end }}
+              </li>
+              {{ end }}
+            </ul>
+          </div>
         </article>
         {{ end }}
       </div>
