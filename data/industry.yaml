@@ -1,4 +1,5 @@
 - company: "AUTEL US Inc."
+  mentor: "Dr. Lingfeng Sun"
   role: "Research Intern"
   date_label: "May–August 2026"
   start_date: "2026-05"
@@ -9,6 +10,7 @@
     - "Built supervised fine-tuning and inference pipelines for UMI data and collected GELLO teleoperation demonstrations."
     - "Developed a VLM-driven subtask annotator for LeRobot datasets with human verification."
 - company: "D-Robotics"
+  mentor: "Dr. Chao Yu"
   role: "Research Intern"
   date_label: "March–July 2025"
   start_date: "2025-03"

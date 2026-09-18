@@ -40,3 +40,5 @@ Push to `main`. The existing Hugo workflow builds `public/` and deploys it with 
 - ReinFlow publication: <https://arxiv.org/abs/2505.22094>, NeurIPS 2025; code: <https://github.com/ReinFlow/ReinFlow>.
 
 The existing Hugo Blox license is retained in `LICENSE.md`.
+
+Profile link icons use [Bootstrap Icons](https://github.com/twbs/icons) (MIT) and [Simple Icons](https://github.com/simple-icons/simple-icons) (CC0). License notices are included in `static/licenses/`.

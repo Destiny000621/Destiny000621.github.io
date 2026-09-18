@@ -44,18 +44,21 @@
           <p class="role">Ph.D. student <span aria-hidden="true">/</span> The University of Texas at Austin</p>
           <h2 class="bio-label">Biography</h2>
           <div class="bio-copy">{{ $author.Content }}</div>
-          <div class="social-links" aria-label="Contact and profiles">
-            <a href="mailto:sichang_su@utexas.edu">Email <span aria-hidden="true">↗</span></a>
-            <a href="https://scholar.google.com/citations?user=fDpyU1AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/Destiny000621" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-            <a href="https://www.linkedin.com/in/sichang-su-b1a2962bb/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-          </div>
         </div>
         <aside class="profile-panel" aria-label="Portrait and research interests">
+          <div class="profile-identity">
           <figure class="portrait">
             <img src="{{ $portrait.RelPermalink }}" width="720" height="720" alt="Sichang Su" fetchpriority="high">
             <figcaption><span class="location-dot" aria-hidden="true"></span>Austin, Texas</figcaption>
           </figure>
+          <nav class="social-links" aria-label="Contact and profiles">
+            <!-- Icons: Bootstrap Icons (MIT) and Simple Icons (CC0); licenses in /licenses/. -->
+            <a href="mailto:sichang_su@utexas.edu" aria-label="Email" title="Email">{{ partial "profile-icons/envelope.html" . }}</a>
+            <a href="https://scholar.google.com/citations?user=fDpyU1AAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{{ partial "profile-icons/google-scholar.html" . }}</a>
+            <a href="https://github.com/Destiny000621" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{{ partial "profile-icons/github.html" . }}</a>
+            <a href="https://www.linkedin.com/in/sichang-su-b1a2962bb/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{{ partial "profile-icons/linkedin.html" . }}</a>
+          </nav>
+          </div>
           <div class="research-interests"><p class="small-label">RESEARCH INTERESTS</p><ul>{{ range $author.Params.interests }}<li>{{ . }}</li>{{ end }}</ul></div>
         </aside>
       </div>
@@ -105,7 +108,7 @@
         {{ range site.Data.industry }}
         <article class="experience-entry">
           <div class="experience-meta"><p>{{ .date_label }}</p><span>{{ .location }}</span></div>
-          <div class="experience-body"><div class="experience-heading"><h3>{{ .company }}</h3><span class="role-badge">{{ .role }}</span></div><p>{{ .description }}</p><ul>{{ range .bullets }}<li>{{ . }}</li>{{ end }}</ul></div>
+          <div class="experience-body"><div class="experience-heading"><h3>{{ .company }}</h3><span class="role-badge">{{ .role }}</span></div>{{ with .mentor }}<p class="experience-mentor"><span>Mentor:</span> {{ . }}</p>{{ end }}<p>{{ .description }}</p><ul>{{ range .bullets }}<li>{{ . }}</li>{{ end }}</ul></div>
         </article>
         {{ end }}
       </div>
