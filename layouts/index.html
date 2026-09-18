@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+{{- $author := site.GetPage "/authors/admin" -}}
+{{- $portrait := ($author.Resources.GetMatch "avatar.*").Resize "720x webp q88" -}}
+{{- $style := resources.Get "css/personal.css" | minify | fingerprint -}}
+{{- $script := resources.Get "js/personal.js" | minify | fingerprint -}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Sichang Su | Robot Learning &amp; Reinforcement Learning</title>
+  <meta name="description" content="{{ $author.Params.bio }}">
+  <meta name="author" content="Sichang Su">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sichang Su | Robot Learning">
+  <meta property="og:description" content="{{ $author.Params.bio }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ $portrait.Permalink }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  <script src="{{ $script.RelPermalink }}" defer integrity="{{ $script.Data.Integrity }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="shell nav" aria-label="Main navigation">
+      <a class="wordmark" href="#about"><span class="monogram" aria-hidden="true">S<span>.</span></span><span>Sichang Su</span></a>
+      <div class="nav-links">
+        <a href="#about" aria-current="location">Biography</a>
+        <a href="#projects">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="about" aria-labelledby="name">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="accent-line" aria-hidden="true"></span> ROBOT LEARNING &amp; REINFORCEMENT LEARNING</p>
+          <h1 id="name">Sichang Su<span class="name-dot" aria-hidden="true">.</span></h1>
+          <p class="role">Ph.D. student <span aria-hidden="true">/</span> The University of Texas at Austin</p>
+          <h2 class="bio-label">Biography</h2>
+          <div class="bio-copy">{{ $author.Content }}</div>
+          <div class="social-links" aria-label="Contact and profiles">
+            <a href="mailto:sichang_su@utexas.edu">Email <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=fDpyU1AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Destiny000621" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/sichang-su-b1a2962bb/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Portrait and research interests">
+          <figure class="portrait">
+            <img src="{{ $portrait.RelPermalink }}" width="720" height="720" alt="Sichang Su" fetchpriority="high">
+            <figcaption><span class="location-dot" aria-hidden="true"></span>Austin, Texas</figcaption>
+          </figure>
+          <div class="research-interests"><p class="small-label">RESEARCH INTERESTS</p><ul>{{ range $author.Params.interests }}<li>{{ . }}</li>{{ end }}</ul></div>
+        </aside>
+      </div>
+      <div class="education" aria-labelledby="education-heading">
+        <h2 id="education-heading" class="small-label">EDUCATION</h2>
+        <div class="education-grid">
+          {{ range $author.Params.education.courses }}
+          <div class="education-item"><p class="education-date">{{ .year }}</p><h3>{{ .institution }}</h3><p>{{ .course }}</p></div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-band" id="projects" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="research-title">Research Project</h2></div><p class="section-aside">From foundation policies<br>to real-world adaptation.</p></div>
+        <div class="project-list">
+          {{ range sort (where site.RegularPages "Section" "project") "Weight" }}
+          {{ $figure := .Resources.GetMatch "featured.*" }}
+          <article class="project-card" aria-labelledby="project-{{ .Weight }}">
+            <a class="project-visual" href="{{ .Params.external_link }}" target="_blank" rel="noopener" aria-label="{{ .Title }} project overview">
+              <div class="visual-heading"><span>{{ .Title }}</span><span>{{ .Params.project_year }}</span></div>
+              <img src="{{ $figure.RelPermalink }}" width="{{ $figure.Width }}" height="{{ $figure.Height }}" alt="{{ .Params.image_alt }}" loading="lazy">
+              <span class="visual-caption">{{ .Params.venue }} <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="project-copy">
+              <div class="project-kicker"><span>{{ .Params.venue }}</span><span>{{ .Params.project_year }}</span></div>
+              <h3 id="project-{{ .Weight }}"><a href="{{ .Params.external_link }}" target="_blank" rel="noopener">{{ .Title }} <span aria-hidden="true">↗</span></a></h3>
+              <p class="project-title">{{ .Params.subtitle }}</p>
+              <p class="project-authors">{{ replace (.Params.author_line | htmlEscape) "Sichang Su" "<strong>Sichang Su</strong>" | safeHTML }}</p>
+              <p class="project-summary">{{ .Params.summary }}</p>
+              <div class="project-links">
+                <a class="primary-link" href="{{ .Params.external_link }}" target="_blank" rel="noopener" aria-label="{{ .Title }} project website">Project website <span aria-hidden="true">↗</span></a>
+                {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>{{ end }}
+                {{ with .Params.url_code }}<a href="{{ . }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>{{ end }}
+              </div>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="experience shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">RESEARCH IN PRACTICE</p><h2 id="experience-title">Industry Experience</h2></div></div>
+      <div class="experience-list">
+        {{ range site.Data.industry }}
+        <article class="experience-entry">
+          <div class="experience-meta"><p>{{ .date_label }}</p><span>{{ .location }}</span></div>
+          <div class="experience-body"><div class="experience-heading"><h3>{{ .company }}</h3><span class="role-badge">{{ .role }}</span></div><p>{{ .description }}</p><ul>{{ range .bullets }}<li>{{ . }}</li>{{ end }}</ul></div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-content"><div><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">Let’s talk research.</h2><p>I welcome conversations about robot learning,<br class="desktop-only"> research collaborations, and related opportunities.</p></div><a class="contact-email" href="mailto:sichang_su@utexas.edu">sichang_su@utexas.edu <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>© {{ now.Year }} Sichang Su</span><span>Reinforcement learning &amp; robotics</span><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD student
+role: Ph.D. student in Aerospace Engineering
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -25,13 +25,13 @@ organizations:
     url: https://www.utexas.edu
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include reinforcement learning and robotics.
+bio: I study reinforcement learning and robotics, with a focus on efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision.
 
 # Interests to show in About widget
 interests:
   - Reinforcement Learning
   - Robotics
-  - VLA/VLM
+  - Robot Foundation Models
 
 # Education to show in About widget
 education:
@@ -56,7 +56,7 @@ social:
     link: '/#contact'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=fDpyU1AAAAAJ&gmla=AH70aAWILcu2ikCfLwel5mtBYJ4nKzEza0zUYWITLVViEnE-jBoC3wNc_jdWW63BYhDnyOHfFbRWphz4vg0O9OI-XtJebiZUrLiP8ZjiX-119-Q
+    link: https://scholar.google.com/citations?user=fDpyU1AAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/Destiny000621
@@ -74,9 +74,8 @@ social:
 highlight_name: true
 ---
 
-I am a first-year Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu). I obtained my Master of Science degree in Mechanical Engineering from the National University of Singapore, under the supervision of [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html). Additionally, I am a visiting scholar at the [University of Iowa](https://uiowa.edu), working under Professor [Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao). I earned my Bachelor's Degree in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).
+I am a Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu).
 
-My research interests lie in Reinforcement Learning and Robotics, with a recent focus on developing robotic generalist policies. My long-term goal is to enable agents and robots to efficiently solve complex, diverse tasks in real-world applications.
+My research interests lie in **reinforcement learning and robotics**. My recent work focuses on **efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision**. My long-term goal is to enable robots to solve complex, diverse tasks efficiently in the real world.
 
-Please contact me at sichang_su@utexas.edu if you are interested in discussing relevant research topics or potential collaborations.
-{style="text-align: justify;"}
+I received my M.Sc. in Mechanical Engineering from the National University of Singapore, advised by [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html), and my B.Eng. in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/). I have also worked with [Prof. Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao) as a visiting scholar at the [University of Iowa](https://uiowa.edu).
