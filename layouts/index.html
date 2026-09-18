@@ -83,11 +83,24 @@
           {{ range sort (where site.RegularPages "Section" "project") "Weight" }}
           {{ $figure := .Resources.GetMatch "featured.*" }}
           <article class="project-card" aria-labelledby="project-{{ .Weight }}">
+            {{ if .Params.demo_file }}
+            {{ $demo := .Resources.GetMatch .Params.demo_file }}
+            {{ $poster := .Resources.GetMatch .Params.demo_poster }}
+            <div class="project-visual project-visual-video">
+              <div class="visual-heading"><span>{{ .Title }}</span><span>{{ .Params.project_year }}</span></div>
+              <video class="project-demo" id="project-demo-{{ .Weight }}" controls muted playsinline loop preload="none" width="960" height="540" poster="{{ $poster.RelPermalink }}" aria-label="{{ .Params.demo_label }}">
+                <source src="{{ $demo.RelPermalink }}" type="video/mp4">
+                <a href="{{ $demo.RelPermalink }}">Watch the {{ .Title }} robot demo.</a>
+              </video>
+              <div class="visual-caption"><span>Earbud insertion · Autonomous 2×</span><button class="demo-toggle" type="button" aria-controls="project-demo-{{ .Weight }}" hidden>Play demo</button></div>
+            </div>
+            {{ else }}
             <a class="project-visual" href="{{ .Params.external_link }}" target="_blank" rel="noopener" aria-label="{{ .Title }} project overview">
               <div class="visual-heading"><span>{{ .Title }}</span><span>{{ .Params.project_year }}</span></div>
               <img src="{{ $figure.RelPermalink }}" width="{{ $figure.Width }}" height="{{ $figure.Height }}" alt="{{ .Params.image_alt }}" loading="lazy">
               <span class="visual-caption">{{ .Params.venue }} <span aria-hidden="true">↗</span></span>
             </a>
+            {{ end }}
             <div class="project-copy">
               <div class="project-kicker"><span>{{ .Params.venue }}</span><span>{{ .Params.project_year }}</span></div>
               <h3 id="project-{{ .Weight }}"><a href="{{ .Params.external_link }}" target="_blank" rel="noopener">{{ .Title }} <span aria-hidden="true">↗</span></a></h3>

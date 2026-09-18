@@ -11,6 +11,9 @@ external_link: 'https://destiny000621.github.io/PARTS/'
 url_pdf: ''
 url_code: ''
 image_alt: 'PARTS overview: targeted residual reinforcement learning improves bottleneck subtasks while reusing reliable base-policy behaviors.'
+demo_file: 'earbud-demo.mp4'
+demo_poster: 'earbud-poster.jpg'
+demo_label: 'Complete autonomous earbud insertion rollout at 2 times speed. The embedded clock shows actual elapsed time.'
 tags:
   - Robot Foundation Models
   - Real-World Reinforcement Learning
