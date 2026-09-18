@@ -37,7 +37,7 @@ Push to `main`. The existing Hugo workflow builds `public/` and deploys it with 
 - Portrait: existing author-provided image.
 - University emblems: official university sources, recorded in `static/images/education/SOURCES.md`; images retain their original colors and proportions.
 - PARTS figure: the author-provided project page's Figure 1 (`webpage-arxiv/overview.png`).
-- PARTS homepage demo: the complete earbud rollout from `webpage-arxiv/earbud.mp4`, compressed to 960×540 H.264 (about 1.5 MB). The original 2× speed and actual-time labels are preserved; playback stays at 1×. The poster is taken at video time 10 seconds. The preview pauses out of view and offers a play/pause button; reduced-motion and data-saving users start with the poster. The original figure remains available in the project bundle.
+- PARTS homepage demo: the complete earbud rollout from `webpage-arxiv/earbud.mp4`, compressed to 960×540 H.264 (about 1.5 MB). The original 2× speed and actual-time labels are preserved; playback stays at 1×. The default poster is the author-selected `long-video/overview/PARTS_overview_v9_frame_43.png`, copied without changes. Playback starts only after clicking **Play demo**, pauses out of view, and preserves a manual pause across scrolling. The original figure remains available in the project bundle.
 - ReinFlow figure: <https://reinflow.github.io/figs/jpgs/ReinFlow.jpg>.
 - ReinFlow publication: <https://arxiv.org/abs/2505.22094>, NeurIPS 2025; code: <https://github.com/ReinFlow/ReinFlow>.
 

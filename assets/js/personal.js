@@ -22,13 +22,13 @@ window.addEventListener("scroll", () => {
 window.addEventListener("resize", updateNavigation);
 updateNavigation();
 
-// Keep previews quiet and pause them outside the viewport. The user's pause
-// choice persists across scrolling; reduced-motion and data-saving users opt in.
+// Previews start only after Play demo is clicked and pause outside the viewport.
+// The user's pause choice persists across scrolling.
 for (const video of document.querySelectorAll(".project-demo")) {
   const button = video.parentElement.querySelector(".demo-toggle");
   if (!button || !("IntersectionObserver" in window)) continue;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let wantsPlayback = !reducedMotion.matches && !navigator.connection?.saveData;
+  let wantsPlayback = false;
   let inView = false;
   video.muted = true;
   video.controls = false;
