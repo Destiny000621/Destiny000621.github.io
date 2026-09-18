@@ -57,6 +57,7 @@
             <a href="https://scholar.google.com/citations?user=fDpyU1AAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{{ partial "profile-icons/google-scholar.html" . }}</a>
             <a href="https://github.com/Destiny000621" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{{ partial "profile-icons/github.html" . }}</a>
             <a href="https://www.linkedin.com/in/sichang-su-b1a2962bb/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{{ partial "profile-icons/linkedin.html" . }}</a>
+            <a href="https://huggingface.co/Sichang0621" target="_blank" rel="noopener" aria-label="Hugging Face" title="Hugging Face">{{ partial "profile-icons/huggingface.html" . }}</a>
           </nav>
           </div>
           <div class="research-interests"><p class="small-label">RESEARCH INTERESTS</p><ul>{{ range $author.Params.interests }}<li>{{ . }}</li>{{ end }}</ul></div>
@@ -66,7 +67,10 @@
         <h2 id="education-heading" class="small-label">EDUCATION</h2>
         <div class="education-grid">
           {{ range $author.Params.education.courses }}
-          <div class="education-item"><p class="education-date">{{ .year }}</p><h3>{{ .institution }}</h3><p>{{ .course }}</p></div>
+          <div class="education-item">
+            {{ if .logo }}<span class="education-mark{{ if .logo_padded }} education-mark-padded{{ end }}"><img class="education-logo" src="{{ .logo | relURL }}" alt="" width="52" height="52" loading="lazy"></span>{{ end }}
+            <div class="education-copy"><p class="education-date">{{ .year }}</p><h3>{{ .institution }}</h3><p>{{ .course }}</p></div>
+          </div>
           {{ end }}
         </div>
       </div>

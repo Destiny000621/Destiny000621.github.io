@@ -90,8 +90,8 @@ p { margin-bottom: 1.1em; }
 .bio-copy strong { color: var(--ink); font-weight: 580; }
 .bio-copy a { text-decoration: none; box-shadow: 0 1px #d6c4ea; }
 .bio-copy a:hover { box-shadow: 0 1px var(--purple); }
-.social-links { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
-.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: 0 0 44px; border: 1px solid #ded2ec; background: var(--surface); border-radius: 50%; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.social-links { display: grid; grid-template-columns: repeat(5, minmax(0, 44px)); justify-content: center; align-items: center; gap: 10px; margin-top: 15px; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 1; border: 1px solid #ded2ec; background: var(--surface); border-radius: 50%; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
 .social-links svg { width: 21px; height: 21px; }
 .social-links a:hover { color: var(--purple-dark); background: var(--lavender-strong); border-color: #bca4d9; }
 .social-links a:focus-visible { border-radius: 50%; }
@@ -109,6 +109,12 @@ p { margin-bottom: 1.1em; }
 .education { margin-top: 49px; padding-top: 26px; border-top: 1px solid var(--line); }
 .education > .small-label { margin-bottom: 18px; }
 .education-grid { display: grid; grid-template-columns: 1.1fr 1.1fr 1fr; gap: 30px; }
+.education-item { display: grid; grid-template-columns: 52px minmax(0, 1fr); align-items: center; gap: 15px; }
+.education-mark { display: block; width: 52px; height: 52px; overflow: hidden; }
+.education-logo { width: 100%; height: 100%; object-fit: contain; }
+/* Official ZJU artwork includes wide white margins; frame the complete seal. */
+.education-mark-padded .education-logo { transform: scale(1.7); mix-blend-mode: multiply; }
+.education-copy { min-width: 0; }
 .education-item + .education-item { border-left: 1px solid var(--line); padding-left: 30px; }
 .education-item h3 { font-size: 15px; font-weight: 600; line-height: 1.55; margin-bottom: 5px; }
 .education-item p { color: var(--muted); font-size: 12px; line-height: 1.7; margin-bottom: 0; }
@@ -219,6 +225,8 @@ p { margin-bottom: 1.1em; }
   .research-interests li { font-size: 12px; }
   .education { margin-top: 37px; }
   .education-grid { gap: 20px; }
+  .education-item { grid-template-columns: 44px minmax(0, 1fr); gap: 11px; }
+  .education-mark { width: 44px; height: 44px; }
   .education-item + .education-item { padding-left: 20px; }
   .education-item h3 { font-size: 13px; }
   .education-item p { font-size: 11px; }
@@ -266,7 +274,9 @@ p { margin-bottom: 1.1em; }
   .research-interests li::before { width: 3px; height: 3px; top: 8px; }
   .education { margin-top: 31px; padding-top: 24px; }
   .education > .small-label { margin-bottom: 16px; }
-  .education-grid { grid-template-columns: 1fr; gap: 18px; }
+  .education-grid { grid-template-columns: 1fr; gap: 20px; }
+  .education-item { grid-template-columns: 52px minmax(0, 1fr); gap: 15px; }
+  .education-mark { width: 52px; height: 52px; }
   .education-item + .education-item { border-left: 0; padding-left: 0; }
   .education-item h3 { font-size: 14px; margin-bottom: 3px; }
   .education-item p { font-size: 12px; }

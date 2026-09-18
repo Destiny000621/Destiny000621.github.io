@@ -35,6 +35,7 @@ Push to `main`. The existing Hugo workflow builds `public/` and deploys it with 
 ## Asset sources
 
 - Portrait: existing author-provided image.
+- University emblems: official university sources, recorded in `static/images/education/SOURCES.md`; images retain their original colors and proportions.
 - PARTS figure: the author-provided project page's Figure 1 (`webpage-arxiv/overview.png`).
 - ReinFlow figure: <https://reinflow.github.io/figs/jpgs/ReinFlow.jpg>.
 - ReinFlow publication: <https://arxiv.org/abs/2505.22094>, NeurIPS 2025; code: <https://github.com/ReinFlow/ReinFlow>.

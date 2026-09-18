@@ -38,12 +38,16 @@ education:
   courses:
     - course: PhD in Aerospace Engineering
       institution: The University of Texas at Austin
+      logo: /images/education/ut-austin.svg
       year: 2025-present
     - course: MSc in Mechanical Engineering
       institution: National University of Singapore
+      logo: /images/education/nus.png
       year: 2023-2025
     - course: BEng in Engineering Mechanics
       institution: Zhejiang University
+      logo: /images/education/zhejiang.png
+      logo_padded: true
       year: 2019-2023
 
 # Social/Academic Networking
