@@ -82,4 +82,4 @@ I am a Ph.D. student in Aerospace Engineering at [The University of Texas at Aus
 
 My research interests lie in **reinforcement learning and robotics**. My recent work focuses on **efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision**. My long-term goal is to enable robots to solve complex, diverse tasks efficiently in the real world.
 
-I received my M.Sc. in Mechanical Engineering from the National University of Singapore, advised by [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html), and my B.Eng. in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/). I have also worked with [Prof. Shaoping Xiao](https://engineering.uiowa.edu/directory/shaoping-xiao) as a visiting scholar at the [University of Iowa](https://uiowa.edu).
+I received my M.Sc. in Mechanical Engineering from the National University of Singapore, advised by [Dr. Guillaume Adrien Sartoretti](https://www.marmotlab.org/bio.html), and my B.Eng. in Engineering Mechanics from [Zhejiang University](https://www.zju.edu.cn/english/).

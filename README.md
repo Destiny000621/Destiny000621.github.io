@@ -7,7 +7,7 @@ A light lavender research homepage built with Hugo 0.123.3 (extended). It highli
 ## Editing content
 
 - `content/authors/admin/_index.md`: biography, research interests, education, and existing profile/contact links.
-- `content/authors/admin/avatar.jpg`: original portrait. Hugo creates an optimized WebP for the homepage.
+- `content/authors/admin/avatar.png`: original portrait. Hugo creates an optimized WebP for the homepage.
 - `content/project/parts/` and `content/project/reinflow/`: project metadata and figures. The project cards use `title`, `subtitle`, `summary`, `author_line`, `venue`, `project_year`, `external_link`, and optional `url_pdf` / `url_code`.
 - `data/industry.yaml`: company, mentors, internship dates, location, and work items, based on the supplied CV and author updates. Each bullet has `text` (inline Markdown), optional `highlight`, and optional `code_url` / `code_label`.
 - `layouts/index.html`: homepage structure and metadata.
