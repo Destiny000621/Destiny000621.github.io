@@ -78,7 +78,7 @@ social:
 highlight_name: true
 ---
 
-I am a Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), co-advised by [Dr. Thinh Doan](https://coolautonomylab.github.io/members/thinh.html) and [Dr. Ufuk Topcu](https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu).
+I am a Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), advised by [Dr. Fangzhou Xia](https://me.utexas.edu/person/fangzhou-xia/).
 
 My research interests lie in **reinforcement learning and robotics**. My recent work focuses on **efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision**. My long-term goal is to enable robots to solve complex, diverse tasks efficiently in the real world.
 
