@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. student in Aerospace Engineering
+role: Ph.D. student (Mechanical Engineering from Spring 2027)
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Aerospace Engineering
+    - course: PhD in Mechanical Engineering (from Spring 2027)
       institution: The University of Texas at Austin
       logo: /images/education/ut-austin.svg
       year: 2025-present
@@ -78,7 +78,7 @@ social:
 highlight_name: true
 ---
 
-I am a Ph.D. student in Aerospace Engineering at [The University of Texas at Austin](https://www.utexas.edu), advised by [Dr. Fangzhou Xia](https://me.utexas.edu/person/fangzhou-xia/).
+I am a Ph.D. student at [The University of Texas at Austin](https://www.utexas.edu), advised by [Dr. Fangzhou Xia](https://me.utexas.edu/person/fangzhou-xia/). I will transfer to the Mechanical Engineering program in Spring 2027.
 
 My research interests lie in **reinforcement learning and robotics**. My recent work focuses on **efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision**. My long-term goal is to enable robots to solve complex, diverse tasks efficiently in the real world.
 
