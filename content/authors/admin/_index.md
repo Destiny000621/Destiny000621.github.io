@@ -78,7 +78,7 @@ social:
 highlight_name: true
 ---
 
-I am a Ph.D. student at [The University of Texas at Austin](https://www.utexas.edu), advised by [Dr. Fangzhou Xia](https://me.utexas.edu/person/fangzhou-xia/). I will transfer to the Mechanical Engineering program in Spring 2027.
+I am a Ph.D. student at [The University of Texas at Austin](https://www.utexas.edu), co-advised by [Dr. Fangzhou Xia](https://me.utexas.edu/person/fangzhou-xia/) and [Dr. Chenfeng Xu](https://www.chenfengx.com). I also work closely with [Dr. Lingfeng Sun](https://lingfeng.moe). I will transfer to the Mechanical Engineering program in Spring 2027.
 
 My research interests lie in **reinforcement learning and robotics**. My recent work focuses on **efficiently adapting robot foundation models to out-of-distribution tasks with minimal human supervision**. My long-term goal is to enable robots to solve complex, diverse tasks efficiently in the real world.
 
